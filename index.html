@@ -1,87 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Zihan Dong's  website">
-        <meta name="keywords" content="Zihan Dong Homepage">
-        <meta name="author" content="Zihan Dong">
-        <meta name="google-site-verification" content="B25RrDVLx7wBDHXc4TWwHrc4kTGiI-QLG5XL6n5uxhs" />
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="style/mySheet.css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <script src="style/myScript.js"></script>
-        <title>Zihan Dong-Home</title>
-    </head>
+    <!-- Note there is no responsive meta tag here -->
 
-    <body >
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico.html">
 
-        <header id="top">
-             <h1 style=" font-weight:normal;"> <a href="index.html"><i class="fa fa-home" style="font-size:25px;"></i></a>Zihan Dong</h1>
-        </header>
-        
-        <div class="topnav" id="myTopnav">
-             <a href="javascript:void(0);" class="icon" onclick="topnavbutton()"><i class="	fa fa-reorder" style="font-size:19px;"></i></a>
-             <a class="active" href="index.html">Home</a>
-             <a href="CV.html">Curriculum Vitae</a>
-             <a href="edu.html">Education</a>
-             <a href="research.html">Research</a>
-             <a href="TA.html">Teaching Assistant</a>
-             <a href="index_ch.html" style="float:right">中文版</a>
+    <title>Zihan Dong</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/non-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Zihan Dong</a>
         </div>
-        
-        <div class="row">
-            <div class="column left" id="myColumn">
-                <ul class="ull">
-                    <li><a href="#Intro">Intro</a></li>
-                    <li><a href="#Interest">Interest</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    </ul>
-            </div>
-              
-            <div class="column middle">
-                <section id="Intro">
-                    <h1 class="headname" >Zihan Dong</h1>
-                    <p><img alt="me" src="images/me.jpg"style="height:35%;width:35%"></p>
-                    <p class="par" >Welcome to my homepage!
-                    <br>I am <b>Zihan Dong</b>,a junior student from the School of Gifted Young, the 
-                    University of Science and Technology of China (USTC) majoring in probability and statistics.</p>
-                </section>
-            
-                <hr>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="misc/index.html">USTC Version</a></li>
+            <!-- <li><a href="Teaching.html">Teaching</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-                <section id="Interest">
-                    <p class="par">Interest: High-Dimensional Statistics, Machine Learning Theory, Optimization</p>
-                </section>
+    <br/> 
+    <!-- class="col-md-15 col-sm-15 col-xs-10" -->
+    <div class="container">
+    	<div class="page-header">
+      		<h2> &nbsp &nbsp Zihan Dong </h2>
+      	</div>
+        <div class="row">	
+      		<div class="col-md-6 col-sm-7 col-xs-7">
+      			<img src="zihan.JPG" class="col-md-12 col-sm-12 col-xs-12" title="Zihan Dong"/>
+      		</div>
+      
+      		<div class="col-md-6 col-sm-5 col-xs-5">
+			<p>I am PhD student at Rutgers University. Prior to Rutgers, I obtained my B.S. from </a> <a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>, 2023. </br>
+			
+				<br/>
+			Here is a copy of my <a href="CV.pdf"> CV</a> (last updated: October 2025). <br/>
+				
+				<br/> <span style="color:red;">Welcome to contact.</span> <br/>
+				
+				
+			<br/> My research interests lie at the intersection of LLMs and statistics. </b> <br/>
+			<br/>
+			Misc: I am also
+			<br/>
+		</p>
+      		</div>
+      	</div>
+    </div>
 
-                <section id="Skills">
-                    <p class="par">Skills: C, R, Python, Latex, Matlab</p>
-                </section>
-        
-            </div>
-              
-            <div class="column right">
-                <p><img alt="USTC" src="images/USTC.jpg" style="height:80%;width:80%"></p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="page-header">
+      <h2>Selected Papers</h2>
+      </div>	  	 
+<p>
+	</p><li>  <a href="https://arxiv.org/abs/2509.11316"> Contrastive Network Representation Learning.</a>
+	    	 <br/>  <b><u>Zihan Dong</u></b>, Xin Zhou,  Ryumei Nakada, Lexin Li, and Linjun Zhang. 
+		arXiv preprint <em>arXiv:2509.11316, 2025.</em>
+		<p></p>
+    </div>
 
-        <footer>
-            <div class="row">
-                <div class="column section">
-                    <p>some useful links...</p>
-                </div>
-                <div class="column section">
-                    <address>
-                        <p style="font-style: normal;"><i class="fa fa-home" style="font-size:20px;"></i> :Room4#418, Middle Campus of USTC Hefei, Anhui, P. R. China</p>
-                        <p style="font-style: normal;"><i class="fa fa-envelope"></i> :andong@mail.ustc.edu.cn</p>
-                        <p style="font-style: normal;"><i class="fa fa-qq"></i> :1569440811</p>
-                        <a href="#top" style="font-style: normal;"><i class="fa fa-arrow-circle-up" style="font-size:40px;"></i></a>
-                    </address>
-                </div>
-            </div>
-            <p><i class="fa fa-copyright"></i>2021 Zihan Dong</p>
-        </footer>
-    </body>
-</html>    
+
+	  
+
+  <div class="container">
+    <div class="page-header">
+      <h2>Recent News</h2>
+      </div>	  	 
+	   <p>
+			  	   <li> Our paper   <a href="https://arxiv.org/abs/2509.11316"> 
+      Contrastive Network Representation Learning
+ </a> <em>just. </em><br/> 
+		  <p>
+    </div>
+
+  <div class="container">
+    <div class="page-header">
+        <h2>Contact</h2>
+      </div>
+      Office: Hill center 459 <br/>
+Primary Email: zd182@stat.rutgers.edu<br/>
+    </div>
+  <!-- <div class="container">
+    <div class="page-header">
+        <h2>Contact</h2>
+      </div>
+      Office: ??? <br/>
+      Email: yongyig at princeton dot edu<br/>
+    </div> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

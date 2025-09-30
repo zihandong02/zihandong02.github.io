@@ -1,0 +1,240 @@
+body {
+    margin:0px;
+    padding:0px;
+    }
+/* 设置页眉的样式 */
+header {
+    background-color: rgb(63, 81, 181);/* 针对不支持渐变的浏览器 */
+    background-image: linear-gradient(to right, rgb(42, 72, 160) , rgb(63, 81, 181));
+    color:rgb(255, 255, 255);
+    text-align: left;
+    font-size: 12px;
+    font-family: Arial, Helvetica, "NSimSun",sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8%;
+ }
+
+ /* header链接样式 */
+ header a{
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    padding: 0px 16px;
+   
+}
+
+/* 改变页眉链接鼠标悬停时的颜色 */
+header a:hover {
+    color: rgb(197, 202, 233);
+  }
+
+/* 导航条 */
+ .topnav {
+     overflow: auto;
+     background-color: rgb(63, 81, 181);/* 针对不支持渐变的浏览器 */
+     background-image: linear-gradient(to right, rgb(42, 72, 160) , rgb(63, 81, 181));
+     padding-left: 8%;
+     font-size: 15px;
+     position:-webkit-sticky;/* Safari */
+     position:sticky;
+     top:0;
+     z-index:1;
+ }
+
+ /* topnavl链接样式 */
+ .topnav a{
+     float:left;
+     display:block;
+     color:rgb(255, 255, 255);
+     text-align:center;
+     margin:0px;
+     padding:13px 16px;
+     text-decoration: none;
+ }
+
+ /* 改变导航栏链接鼠标悬停时的颜色 */
+ .topnav a:hover {
+    color:rgb(140,158,255);
+ }
+
+ /*活动/当前导航链接 */
+.topnav a.active {
+    background-color: #ddd;
+    color: black;
+  }
+
+/* 导航收缩后图标 */
+.topnav .icon {
+    display: none;
+  }
+  
+.column {
+    float: left;
+    padding: 0px;
+ }
+  
+ /* 左侧栏的宽度 */
+  .column.left {
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    padding-top:70px;
+    padding-right: 0;
+    position:-webkit-sticky;/* Safari */
+    position:sticky;
+    top:46px;  
+ }
+
+ /* target定位后样式 */
+ :target{
+   padding-top: 46px;
+   margin-top: -46px;
+ }
+ /* 右侧栏的宽度 */
+ .column.right {
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+    padding-top:62px;
+    padding-left: 0;
+ }
+   
+  /* 中间列宽度 */
+  .column.middle {
+    width: 60%;
+    padding:0px 3%;
+ }
+
+ .column.section {
+   width: 50%;
+   padding:0px 0;
+ }
+
+ .column.middleleft{
+   width: 50%;
+   float:left;
+   line-height: 200%
+ }
+
+ .column.middleright{
+   width:50%;
+   float: right;
+   line-height: 200%
+ }
+ /* 清除列之后的浮动 */
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/* 主页姓名格式 */
+.headname {
+    font-size: 40px;
+    font-family:" PingFang SC", "Times New Roman", "NSimSun", serif;
+    color:rgb(86,79,77);
+    padding-left:1.5%;
+    font-weight:lighter;
+}
+
+/* 小标题格式 */
+.subheadname {
+    font-size: 19px;
+    color:rgb(7, 7, 7);
+    padding-left:1.5%;
+    font-weight:normal;
+}
+/* 设置内容段落格式 */
+.par {
+  padding-left:1.5%;
+  margin-right: 20%;
+  line-height: 200%
+}
+
+/* 左侧链接 */
+.ull{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    background-color: #f1f1f1;
+}
+ 
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* 底部样式 */
+footer {
+    background-color: rgb(231, 237, 248);
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+/* 响应式页面 */
+  @media screen and (max-width: 950px) {
+    header{padding-left: 60px;}
+    .topnav{padding-left: 115px;}
+    .topnav a:not(:nth-child(-n+2)) {display: none;}
+    .topnav a.icon {
+        float: left;
+        display: block;
+        position: absolute;
+        left:60px;
+      }
+    .topnav.responsive {
+        position:-webkit-sticky;/* Safari */
+        position:sticky;
+        top:0;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 60px;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .column.left.responsive {top:276px;}
+  }
+
+  @media screen and (max-width: 790px){
+    .column.middleleft{
+      width: 100%;
+    }
+    .column.middleright{
+      width:100%;
+    }
+    .column.right {display: none;}
+  }
+
+  @media screen and (max-width: 600px) {
+    header{padding-left:17px;}
+    .topnav{padding-left: 73px;}
+    .topnav a.icon{left: 18px;}
+    .topnav.responsive .icon{left: 18px;}
+    .column.left.responsive {display: none;}
+    .column.left {display: none;}
+    .column.middle{width:100%}
+    .headername {font-weight:normal;}
+    .column.section{width: 100%;}
+  }
+  #rcorners1 {
+    border-radius: 20px;
+    background: #d8dffd;
+    padding: 20px 20px;
+    width: 220px;
+}

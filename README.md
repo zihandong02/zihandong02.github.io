@@ -1,3 +1,3 @@
 # Personal website
 
-Modified from Mengxin(Maxine) Yu's Homepage.[https://github.com/MaxineYu/personal_web](https://github.com/MaxineYu/personal_web)
+Modified from Yuchen Wu's Homepage.[https://github.com/wuyc0114/wuyc0114.github.io](https://github.com/wuyc0114/wuyc0114.github.io)

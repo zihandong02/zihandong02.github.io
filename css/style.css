@@ -6,3 +6,7 @@ p.bibitem {
   margin: 20px;
   text-indent: -10px;
 }
+
+.paper-title {
+  color: #337ab7;
+}

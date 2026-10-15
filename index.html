@@ -23,6 +23,10 @@
         --border-width:  0 ;
     }
 
+    #research .paper-title {
+        color: #428bca;
+    }
+
 </style>
 
 
@@ -72,7 +76,6 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
             <li><a href="teaching.html">Teaching</a></li>
             <li><a href="misc/index.html">USTC Version</a></li>
             <!-- <li><a href="Teaching.html">Teaching</a></li> -->
@@ -85,30 +88,28 @@
     <!-- class="col-md-15 col-sm-15 col-xs-10" -->
     <div class="container">
     	<div class="page-header">
-      		<h2>Zihan Dong  &nbsp &nbsp <font style="font-family:'FangSong'"> </font> </h2>
+        <h2 style="font-size: 36px; font-weight: 300;">Zihan Dong</h2>
       	</div>
         <div class="row">
       		<!-- <div class="col-md-4 col-sm-7 col-xs-7">
       			<img src="photos/zihan.JPG" class="col-md-12 col-sm-12 col-xs-15" title="Zihan Dong"/> -->
-          <div class="col-md-6 col-sm-7 col-xs-7">
-            <img src="photos/zihan_01_2026.jpg" class="col-md-12 col-sm-12 col-xs-12" title="Zihan Dong"/>
+          <div class="col-md-4 col-sm-4 col-xs-5">
+            <img src="photos/ZihanDong-1.jpg" class="img-responsive img-circle" style="width: 200px; height: 200px; object-fit: cover;" alt="Zihan Dong" title="Zihan Dong"/>
       		</div>
       
-      		<div class="col-md-6 col-sm-5 col-xs-5">
-                I am a Ph.D. candidate in Statistics at Rutgers University. Prior to Rutgers, I obtained my B.S. in Mathematics from the School of the Gifted Young, </a> <a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>, 2023.
+        <div class="col-md-8 col-sm-8 col-xs-7">
+                I am a Ph.D. candidate in Statistics at Rutgers University. Prior to Rutgers, I obtained my B.S. in Mathematics from the School of the Gifted Young, <a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>, 2023.
                 <br />
                 <br />
-                Currently, I am working on building long-horizon LLM agents for coding and reasoning through mid- and post-training. Previously, my research interests lay at the intersection of AI and statistics, including semiparametric methods for LLMs, statistical foundations of large language models, and representation learning.
-                <ul>
-                  <li> Mid- and post-training for coding agents. </li>
-                  <li> Statistical Foundations of Large Language Models. </li>
-                </ul>
+                I am currently an Applied Scientist Intern at Amazon AGI. Previously, I was a Research Intern with Qwen, Tongyi Lab, Alibaba Group. My research focuses on LLM post-training, long-horizon coding agents, and the statistical foundations of AI.
                 
                 <br />
-                Here is my <a href="https://scholar.google.com/citations?hl=en&user=A_N-ywsAAAAJ">Google Scholar</a> page and <a href="pdf/CV_Zihan.pdf">CV</a>.</p> <p style="color:DodgerBlue;"><b>Open to research discussions, feel free to reach out!</b></p>
+                <p style="color:DodgerBlue;"><b>Open to research discussions, feel free to reach out!</b></p>
 
       	</div>
     </div>
+
+    <p style="text-align: center; margin: 55px 0 5px; line-height: 1.8;"><a href="pdf/CV_add_project.pdf">CV</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?hl=en&amp;user=A_N-ywsAAAAJ">Google Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/zihandong02">GitHub</a> &nbsp;/&nbsp; <a href="mailto:zd182@stat.rutgers.edu">Email</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/zihan-dong-808831266/">LinkedIn</a></p>
 
         <!-- <div class="container">
     <div class="page-header">
@@ -121,7 +122,7 @@
         
         <!-- <div class="section"> -->
   <div class="container">
-    <div class="page-header">
+    <div class="page-header" style="border-top: 1px solid #eee;">
           <h2>News</h2>
           <div class="content">
             <ul>
@@ -137,6 +138,140 @@
         </div>
     </div>
 
+
+    <div class="container" id="research" style="scroll-margin-top: 65px;">
+        <div class="page-header">
+          <h2>Research</h2>
+        </div>
+        <p>My research focuses on mid- and post-training for coding agents and the statistical foundations of large language models, including reinforcement learning, reward modeling, and evaluation from noisy feedback.</p>
+        <ul>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Just Reuse the Rollout Log-Probs: Stable Mixture-of-Experts Reinforcement Learning with a Vocabulary-KL Clip</b>
+            <br/> <b>Zihan Dong</b>, Shuo Yang, Chiyu Ma, Haozhe Li, Yang Zhou, Zihang Meng, Hao Zhou, Linjun Zhang, and Guoyin Wang.
+            <p style="color:Gray;"><i>Submitted to ICLR 2027.</i></p>
+            <p>VoKL stabilizes mixture-of-experts reinforcement learning by reusing rollout log-probabilities and applying a vocabulary-KL trust region to address the training–inference mismatch.</p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Evaluating LLMs When They Do Not Know the Answer: Statistical Evaluation of Mathematical Reasoning via Comparative Signals</b>
+            <br/> <b>Zihan Dong</b>, Zhixian Zhang, Yang Zhou, Can Jin, Ruijia Wu, Linjun Zhang.
+            <p style="color:Gray;"><i>ICML 2026.</i></p>
+            <p>Combines labeled outcomes with pairwise reasoning comparisons in a semiparametric estimator to improve the precision and reliability of LLM evaluation.</p>
+            <p><a href="https://arxiv.org/abs/2602.03061">Paper</a> / <a href="https://github.com/zihandong02/AI_evaluation">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Alternating Reinforcement Learning for Rubric-Based Reward Modeling in Non-Verifiable LLM Post-Training</b>
+            <br/> Ran Xu, Tianci Liu, <b>Zihan Dong</b>, Tony Yu, Ilgee Hong, Carl Yang, Linjun Zhang, Tuo Zhao, Haoyu Wang.
+            <p style="color:Gray;"><i>ICML 2026.</i></p>
+            <p>Rubric-ARM alternates reinforcement learning updates between a rubric generator and a judge to improve reward modeling for open-ended tasks.</p>
+            <p><a href="https://arxiv.org/abs/2602.01511">Paper</a> / <a href="https://github.com/wanghaoyu0408/OpenRubrics">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration</b>
+            <br/> Jiaqi Liu, Shi Qiu, Mairui Li, …, <b>Zihan Dong</b>, et al.
+            <p style="color:Gray;"><i>Submitted to ICLR 2027.</i></p>
+            <p>An iterative autonomous research system that combines multi-agent debate, recovery from failed experiments, cross-run learning, and targeted human collaboration.</p>
+            <p><a href="https://arxiv.org/abs/2605.20025">Paper</a> / <a href="https://github.com/aiming-lab/AutoResearchClaw">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Labels or Preferences? Budget-Constrained Learning with Human Judgments over AI-Generated Outputs</b>
+            <br/> <b>Zihan Dong</b>, Xiaotian Hou, Ruijia Wu, and Linjun Zhang.
+            <p style="color:Gray;"><i>Preprint, 2026.</i></p>
+            <p>A semiparametric active learning framework that allocates a fixed annotation budget between labels and preferences while targeting statistically efficient estimation.</p>
+            <p><a href="https://arxiv.org/abs/2601.13458">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Contrastive Network Representation Learning</b>
+            <br/> <b>Zihan Dong</b>, Xin Zhou, Ryumei Nakada, Lexin Li, and Linjun Zhang.
+            <p style="color:Gray;"><i>Preprint, 2025.</i></p>
+            <p>Learns network edge representations through contrastive learning and adaptive masking, with minimax-optimal guarantees and applications to brain connectivity analysis.</p>
+            <p><a href="https://arxiv.org/abs/2509.11316">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">RIMS: Preference Optimization via Smoothed Multi-pair Aggregation for Small-Scale LLM Retrieval-Augmented Generation</b>
+            <br/> Pei Tian, <b>Zihan Dong</b>, Tianci Liu, Linjun Zhang, and Haoyu Wang.
+            <p style="color:Gray;"><i>COLM 2026.</i></p>
+            <p>RIMS improves small-model retrieval-augmented generation by generating its own preference data and smoothly aggregating multiple preference pairs during optimization.</p>
+            <p><a href="https://arxiv.org/abs/2607.16431">Paper</a> / <a href="https://github.com/tptrix29/RIMS">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising</b>
+            <br/> Tianci Liu, <b>Zihan Dong</b>, Linjun Zhang, Haoyu Wang, Jing Gao, Emre Kiciman, Ranveer Chandra, and Wei-Ting Chen.
+            <p style="color:Gray;"><i>ECCV 2026.</i></p>
+            <p>SPIRE learns latent slide-design preferences through inverse planning, training collaborative agents to reconstruct structurally corrupted slides with reinforcement learning.</p>
+            <p><a href="https://arxiv.org/abs/2607.00407">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</b>
+            <br/> Shuhang Lin, Chuhao Zhou, Xiao Lin, <b>Zihan Dong</b>, Kuan Lu, Zhencan Peng, Jie Yin, Dimitris N. Metaxas.
+            <p style="color:Gray;"><i>ICML 2026.</i></p>
+            <p>CPR combines query-level conformal calibration with learned path scores to produce compact answer sets with coverage guarantees for knowledge graph question answering.</p>
+            <p><a href="https://arxiv.org/abs/2605.08077">Paper</a> / <a href="https://github.com/betterCallSherlock/CPR">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">MMedAgent-RL: Optimizing Multi-Agent Collaboration for Multimodal Medical Reasoning</b>
+            <br/> Peng Xia, Jinglu Wang, Yibo Peng, Kaide Zeng, <b>Zihan Dong</b>, Xian Wu, Xiangru Tang, Hongtu Zhu, Yun Li, Linjun Zhang, Shujie Liu, Yan Lu, and Huaxiu Yao.
+            <p style="color:Gray;"><i>ICLR 2026.</i></p>
+            <p>MMedAgent-RL trains triage and attending agents with reinforcement learning to route cases to specialists and integrate their judgments for multimodal medical reasoning.</p>
+            <p><a href="https://arxiv.org/abs/2506.00555">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">AceSearcher: Bootstrapping Reasoning and Search for LLMs via Reinforced Self-Play</b>
+            <br/> Ran Xu, Yuchen Zhuang, <b>Zihan Dong</b>, et al.
+            <p style="color:Gray;"><i>NeurIPS 2025 <b>Spotlight</b>.</i></p>
+            <p>AceSearcher trains an LLM to alternate between query decomposition and answer generation through supervised fine-tuning and reinforced self-play for multi-hop search.</p>
+            <p><a href="https://arxiv.org/abs/2509.24193">Paper</a> / <a href="https://github.com/ritaranx/AceSearcher">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing</b>
+            <br/> Tianci Liu, Ruirui Li, <b>Zihan Dong</b>, Hui Liu, Xianfeng Tang, Qingyu Yin, Linjun Zhang, Haoyu Wang, and Jing Gao.
+            <p style="color:Gray;"><i>ICML 2025.</i></p>
+            <p>OVERTONE adaptively smooths token-level training targets to reduce heterogeneous overfitting and preserve reasoning about newly edited LLM knowledge.</p>
+            <p><a href="https://arxiv.org/abs/2502.00602">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Hybrid-Policy Self-Editing for Composable Unstructured Knowledge Editing</b>
+            <br/> Tianci Liu, <b>Zihan Dong</b>, Tianchun Li, Yi-Chung Chen, Qiming Cao, Xingchen Wang, Shiyang Wang, Zichen Miao, Linjun Zhang, Haoyu Wang, and Jing Gao.
+            <p style="color:Gray;"><i>Submitted to ICLR 2027.</i></p>
+            <p>Hybrid-policy self-distillation helps edited language models apply newly inserted knowledge to factual questions and multi-hop reasoning without external supervision.</p>
+            <p><a href="https://arxiv.org/abs/2608.11660">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">DARE: Difficulty-Adaptive Reinforcement Learning with Co-Evolved Difficulty Estimation</b>
+            <br/> Yang Zhou, Can Jin, <b>Zihan Dong</b>, Zhepeng Wang, Yanting Yang, Shiyu Zhao, Lei Li, Runxue Bao, Yaochen Xie, and Dimitris N. Metaxas.
+            <p style="color:Gray;"><i>Submitted to ICLR 2027.</i></p>
+            <p>DARE co-evolves difficulty estimation with the policy and adapts data selection, training strategies, and computation to improve reasoning across easy and hard tasks.</p>
+            <p><a href="https://arxiv.org/abs/2605.09188">Paper</a> / <a href="https://github.com/EtaYang10th/DARE">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">Evidence Over Plans: Online Trajectory Verification for Skill Distillation</b>
+            <br/> Yang Zhou, <b>Zihan Dong</b>, et al.
+            <p style="color:Gray;"><i>Submitted to ICLR 2027.</i></p>
+            <p>Distills agent skills from environment-verified execution trajectories and uses a trajectory-level diagnostic to keep those skills grounded in observed evidence.</p>
+            <p><a href="https://arxiv.org/abs/2605.09192">Paper</a> / <a href="https://github.com/EtaYang10th/spark-skills">Code</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">RUBRIC-ARROW: Alternating Pointwise Rubric Reward Modeling for LLM Post-training in Non-verifiable Domains</b>
+            <br/> Haoxiang Jiang, <b>Zihan Dong</b>, Tianci Liu, Wanying Wang, Ran Xu, Tony Yu, Linjun Zhang, and Haoyu Wang.
+            <p style="color:Gray;"><i>Preprint, 2026.</i></p>
+            <p>RUBRIC-ARROW alternates training a rubric generator and a rubric-conditioned judge from pairwise preferences to provide pointwise rewards for non-verifiable tasks.</p>
+            <p><a href="https://arxiv.org/abs/2605.29156">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning</b>
+            <br/> Can Jin, Yang Zhou, Qixin Zhang, Hongwu Peng, Di Zhang, <b>Zihan Dong</b>, Marco Pavone, Ligong Han, Zhang-Wei Hong, Tong Che, Dimitris N. Metaxas.
+            <p style="color:Gray;"><i>Preprint, 2026.</i></p>
+            <p>AIRL-S learns dense process rewards from reference trajectories through adversarial inverse reinforcement learning, using the same reward model for policy training and test-time search.</p>
+            <p><a href="https://arxiv.org/abs/2508.14313">Paper</a></p>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <b class="paper-title">LUCID-SAE: Learning Unified Vision-Language Sparse Codes for Interpretable Concept Discovery</b>
+            <br/> Difei Gu, Yunhe Gao, Gerasimos Chatzoudis, <b>Zihan Dong</b>, et al.
+            <p style="color:Gray;"><i>Preprint, 2026.</i></p>
+            <p>LUCID-SAE learns a shared sparse dictionary for image patches and text tokens, aligning interpretable concepts across modalities through optimal transport without labels.</p>
+            <p><a href="https://arxiv.org/abs/2602.07311">Paper</a></p>
+          </li>
+        </ul>
+    </div>
 
   <div class="container">
     <div class="page-header">
